@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Env / secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Local work / 個人メモ
+_scratch/
+private/
+tmp/
+*.local.md

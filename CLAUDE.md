@@ -1,16 +1,15 @@
 # AMP (Agent Memory Protocol)
 
+> **親**: [Akari-OS エコシステム](https://github.com/Akari-OS/.github) — 全体ビジョン・ロードマップ・行動規範
+> **Memory Architecture**: [docs/memory.md](https://github.com/Akari-OS/.github/blob/main/docs/memory.md) — AMP が参照する 4 層記憶モデル
+
 ## 概要
 
 AIエージェントの記憶管理を標準化するオープンプロトコル。
 MCPがツール呼び出しを標準化したように、AMPは記憶の保存・検索・共有・忘却を標準化する。
 
-## 関連プロジェクト
-
-| プロジェクト | パス | 関係 |
-|------------|------|------|
-| **M2C** | `~/_project/PJ26c19_M2C` | メディア→コンテキスト変換プロトコル（AMPの入力側） |
-| **AKARI Desktop** | `~/_project/PJ26c12_IndieBase` | AMP最初の実装先（MSP → AMP） |
+Akari-OS エコシステムの **Core 層**（プロトコル仕様）として、M2C（入力側）と
+AKARI Desktop / AkariPool（実装先）と連携する。
 
 ## 技術スタック
 
