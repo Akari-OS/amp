@@ -148,9 +148,7 @@ spec/
 
 ## Known Implementations
 
-| Project | Status | Description |
-|---------|--------|-------------|
-| *Your project here* | — | [Submit an implementation](https://github.com/) |
+See [IMPLEMENTATIONS.md](./IMPLEMENTATIONS.md) for the current list of known implementations and providers.
 
 ## License
 
