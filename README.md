@@ -120,13 +120,18 @@ Agents can share memories with full provenance tracking. Every memory carries it
 
 ## Specification
 
+**Latest:** v0.1 (stable), v0.2-draft (AKARI-OS alignment delta)
+
 ```
 spec/
-└── v0.1/
-    ├── protocol.md      ← Core protocol specification
-    ├── schema.json      ← MemoryRecord JSON Schema
-    └── ja/
-        └── protocol.md  ← Japanese translation
+├── v0.1/
+│   ├── protocol.md      ← Core protocol specification (stable)
+│   ├── schema.json      ← MemoryRecord JSON Schema
+│   └── ja/
+│       └── protocol.md  ← Japanese translation
+└── v0.2/
+    └── protocol.md      ← Delta spec (draft): Pool interop,
+                            7-agent schemas, Shell APIs
 ```
 
 ## Design Principles
@@ -153,7 +158,8 @@ Apache 2.0
 
 ## Links
 
-- [Protocol Spec (v0.1)](spec/v0.1/protocol.md)
+- [Protocol Spec (v0.1, stable)](spec/v0.1/protocol.md)
+- [Protocol Spec (v0.2, draft — delta)](spec/v0.2/protocol.md)
 - [JSON Schema](spec/v0.1/schema.json)
 
 ### Inspiration

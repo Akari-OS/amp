@@ -120,13 +120,18 @@ PII分類を内蔵: `none` / `personal` / `sensitive` / `restricted`
 
 ## 仕様書
 
+**最新:** v0.1（安定版）、v0.2-draft（AKARI-OS 向け差分仕様）
+
 ```
 spec/
-└── v0.1/
-    ├── protocol.md      ← コアプロトコル仕様
-    ├── schema.json      ← MemoryRecord JSON Schema
-    └── ja/
-        └── protocol.md  ← 日本語版
+├── v0.1/
+│   ├── protocol.md      ← コアプロトコル仕様（安定版）
+│   ├── schema.json      ← MemoryRecord JSON Schema
+│   └── ja/
+│       └── protocol.md  ← 日本語版
+└── v0.2/
+    └── protocol.md      ← 差分仕様（draft）: Pool 連携、
+                            7エージェント向けスキーマ、Shell API
 ```
 
 ## 設計原則
@@ -147,7 +152,8 @@ Apache 2.0
 
 ## リンク
 
-- [プロトコル仕様 (v0.1)](spec/v0.1/protocol.md)
+- [プロトコル仕様 (v0.1, 安定版)](spec/v0.1/protocol.md)
+- [プロトコル仕様 (v0.2, draft — 差分)](spec/v0.2/protocol.md)
 - [JSON Schema](spec/v0.1/schema.json)
 - [日本語版プロトコル仕様](spec/v0.1/ja/protocol.md)
 
