@@ -30,6 +30,35 @@ v0.2 is backwards-compatible with v0.1. A v0.1-only provider MAY ignore the v0.2
 
 ---
 
+## §0.5 Position in AKARI OS
+
+AMP is the **Memory Layer** protocol within the AKARI OS 5-layer architecture:
+
+```
+┌─────────────────────────────────────────────┐
+│ アプリ層（Module）                            │
+│   Writer / Video / Publishing Modules / ...  │
+├─────────────────────────────────────────────┤
+│ Shell（器）— UI chrome、Module の実行場       │
+├─────────────────────────────────────────────┤
+│ Agent Runtime — Reference Agents (7) + α     │
+│   (reference defaults; apps may add agents)  │
+├─────────────────────────────────────────────┤
+│ Memory Layer  ← AMP lives here               │
+│   Pool (Knowledge Store) + AMP (this spec)   │
+├─────────────────────────────────────────────┤
+│ Semantic Layer — M2C + ACE                   │
+├─────────────────────────────────────────────┤
+│ Protocol Suite — MCP / M2C / AMP / ACE       │
+└─────────────────────────────────────────────┘
+```
+
+AKARI agents write all state exclusively to the Memory Layer (Pool + AMP). The Agent Runtime is ephemeral — state is only persisted here.
+
+> Full ecosystem context: [AKARI VISION](https://github.com/Akari-OS/.github)
+
+---
+
 ## 1. Pool Interop (new chapter)
 
 ### 1.1 Role Boundary
