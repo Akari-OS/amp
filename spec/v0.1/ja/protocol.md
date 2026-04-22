@@ -1098,3 +1098,93 @@ AMP の記憶型システムは確立された認知科学モデルに基づい�
 | **Liu et al.**（2025） | 3D分類法（Forms/Functions/Dynamics）。AMP のライフサイクルモデル |
 
 ---
+
+## Appendix B: 関連仕様
+
+| 仕様 | 関係 |
+|------|------|
+| [MCP](https://modelcontextprotocol.io) | AMP Provider は MCP ツールサーバーとして公開できる |
+| [M2C](https://github.com/Akari-OS/m2c) | M2C が生成したコンテキストを AMP 記憶として保存できる |
+| [A2A](https://a2a-protocol.org/) | AMP 記憶は A2A 上でエージェント間交換できる |
+| [Mem0](https://mem0.ai/) | AMPProvider インターフェースを実装可能 |
+| [LangMem](https://github.com/langchain-ai/langmem) | AMPProvider インターフェースを実装可能 |
+
+---
+
+## Appendix C: 完全な例 — 記憶ライフサイクル
+
+記憶がライフサイクル全体を経る完全な例を示す。
+
+### Step 1: Encode（エンコード）
+
+ユーザーが「すべてのアプリでダークモードにしたい」と発言。
+
+```json
+{
+  "id": "mem_001",
+  "type": "semantic",
+  "content": "ユーザーはすべてのアプリでダークモードを好む",
+  "confidence": 0.9,
+  "reinforcement": 0,
+  "provenance": {
+    "agent": { "id": "agent-akari", "name": "AKARI Partner", "platform": "akari" },
+    "source": { "kind": "user_statement", "confidence": 0.9 },
+    "sessionId": "sess_001",
+    "chain": [{
+      "timestamp": "2026-04-01T10:00:00Z",
+      "operation": "encode",
+      "agent": { "id": "agent-akari", "name": "AKARI Partner", "platform": "akari" }
+    }]
+  },
+  "access": { "scope": "private", "pii": "personal" },
+  "tags": ["preference", "ui", "dark-mode"],
+  "relations": [],
+  "createdAt": "2026-04-01T10:00:00Z",
+  "updatedAt": "2026-04-01T10:00:00Z",
+  "status": "active"
+}
+```
+
+### Step 2: Reinforce（強化）— 5日後
+
+ユーザーが別のコンテキストでダークモードを設定。
+
+```json
+{
+  "confidence": 0.945,
+  "reinforcement": 1,
+  "updatedAt": "2026-04-06T14:00:00Z"
+}
+```
+
+### Step 3: Consolidate（統合）— 10日後
+
+UI 設定に関する3件の関連記憶をひとつに統合。
+
+```json
+{
+  "id": "mem_010",
+  "type": "semantic",
+  "content": "ユーザーの UI 設定好み: ダークモード、ミニマル UI、大きなフォント、ハイコントラスト",
+  "confidence": 0.95,
+  "provenance": {
+    "source": { "kind": "consolidation", "sourceIds": ["mem_001", "mem_004", "mem_007"] },
+    "consolidatedFrom": ["mem_001", "mem_004", "mem_007"]
+  }
+}
+```
+
+### Step 4: Retrieve（検索）— 30日後
+
+クエリ：「ユーザーの UI 設定の好みは？」
+
+```json
+{
+  "memories": [{
+    "record": { "id": "mem_010", "content": "ユーザーの UI 設定好み: ダークモード、ミニマル UI、大きなフォント、ハイコントラスト", "confidence": 0.95 },
+    "relevance": 0.92
+  }],
+  "totalCount": 1,
+  "durationMs": 12
+}
+```
