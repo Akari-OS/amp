@@ -5,6 +5,13 @@ status: draft
 created: 2026-04-14
 predecessor: v0.1
 ai-context: claude-code
+related-specs:
+  - AKARI-AMP-001
+  - AKARI-HUB-017
+  - AKARI-HUB-018
+  - AMP-V0.1
+  - ACE-V0.1
+  - M2C-V0.2
 ---
 
 # Agent Memory Protocol v0.2 (Delta Spec)
