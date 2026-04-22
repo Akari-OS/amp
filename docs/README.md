@@ -4,7 +4,7 @@
 > **扱う範囲**: spec v0.1（stable）/ v0.2（draft）、Known Implementations、Provider 規約、サンプル
 > **扱わない範囲**: 実装（→ consumer 側の各エージェントリポ）、Pool のスキーマ設計（→ AkariPool）、運用ハブ（→ Hub）
 >
-> - 🌐 正典: [Akari-OS](https://github.com/Akari-OS)
+> - 🌐 正典: [Akari-OS/.github](https://github.com/Akari-OS)
 > - 🏛 Hub（非公開）: `akari-os` — 横断研究・戦略・Master Index
 > - 🗺 全リポマップ: `akari-os/MAP.md`
 
@@ -18,6 +18,12 @@
 |---|---|
 | [`../spec/v0.1/`](../spec/v0.1/) | v0.1（stable）— 正式リリース版 |
 | [`../spec/v0.2/`](../spec/v0.2/) | v0.2（draft）— 検討中の拡張 |
+
+### docs/specs（逆算 wrapper specs）
+
+| ファイル | Spec ID | 内容 |
+|---|---|---|
+| [`docs/specs/spec-reverse-amp-v0-1.md`](specs/spec-reverse-amp-v0-1.md) | AKARI-AMP-001 | AMP v0.1 逆算 wrapper — Hub (ADR-014 等) からの参照 anchor |
 
 ### ルート直下のメタドキュメント
 
