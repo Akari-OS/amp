@@ -1,6 +1,19 @@
+---
+spec-id: AMP-V0.1
+version: 0.1.0
+status: implemented
+created: 2026-04-01
+updated: 2026-04-22
+related-specs:
+  - AKARI-AMP-001
+  - AKARI-HUB-017
+  - AKARI-HUB-018
+ai-context: claude-code
+---
+
 # AMP Protocol Specification v0.1
 
-> Status: Draft
+> Status: Implemented (v0.1.0 released 2026-04-01)
 > Date: 2026-04-01
 
 ## 1. Overview
