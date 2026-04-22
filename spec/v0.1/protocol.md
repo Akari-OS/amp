@@ -1102,7 +1102,7 @@ AMP's memory type system is grounded in established cognitive science models:
 | Specification | Relationship |
 |--------------|-------------|
 | [MCP](https://modelcontextprotocol.io) | AMP providers can be MCP tool servers |
-| [M2C](https://github.com/) | M2C context can be stored as AMP memories |
+| [M2C](https://github.com/Akari-OS/m2c) | M2C context can be stored as AMP memories |
 | [A2A](https://a2a-protocol.org/) | AMP memories can be exchanged over A2A |
 | [Mem0](https://mem0.ai/) | Can implement AMPProvider interface |
 | [LangMem](https://github.com/langchain-ai/langmem) | Can implement AMPProvider interface |

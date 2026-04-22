@@ -163,7 +163,7 @@ Apache 2.0
 ### Inspiration
 
 - [MCP (Model Context Protocol)](https://modelcontextprotocol.io)
-- [M2C (Media to Context Protocol)](https://github.com/)
+- [M2C (Media to Context Protocol)](https://github.com/Akari-OS/m2c)
 - [Mem0 — The Memory Layer for AI](https://mem0.ai/)
 - [CoALA — Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427)
 - [Memory in the Age of AI Agents (Liu et al., 2025)](https://arxiv.org/abs/2512.13564)
