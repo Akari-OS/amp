@@ -5,8 +5,8 @@
 > **扱わない範囲**: 実装（→ consumer 側の各エージェントリポ）、Pool のスキーマ設計（→ AkariPool）、運用ハブ（→ Hub）
 >
 > - 🌐 正典: [Akari-OS](https://github.com/Akari-OS)
-> - 🏛 Hub（非公開）: `PJ26c21_AkariOS` — 横断研究・戦略・Master Index
-> - 🗺 全リポマップ: `PJ26c21_AkariOS/MAP.md`
+> - 🏛 Hub（非公開）: `akari-os` — 横断研究・戦略・Master Index
+> - 🗺 全リポマップ: `akari-os/MAP.md`
 
 ---
 
