@@ -1,7 +1,7 @@
 ---
 spec-id: AMP-V0.1
 version: 0.1.0
-status: implemented
+status: stable
 created: 2026-04-01
 updated: 2026-04-22
 related-specs:
@@ -13,7 +13,7 @@ ai-context: claude-code
 
 # AMP Protocol Specification v0.1
 
-> Status: Implemented (v0.1.0 released 2026-04-01)
+> Status: Stable (v0.1.0 released 2026-04-01, ref impl planned for v0.2)
 > Date: 2026-04-01
 
 ## 1. Overview
