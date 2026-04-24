@@ -2,8 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://amp-protocol.org/schema/v0.1/mcp-tools.json",
   "title": "AMP MCP Tool Input Schemas",
-  "description": "Input schemas for the 7 MCP tools exposed by AMP providers (§12.1). Each tool maps 1:1 to an AMP operation (§3.2). Derived from the TypeScript interfaces in the spec so that MCP clients can validate tool inputs without parsing markdown.",
+  "description": "Input schemas for the 7 MCP tools exposed by AMP providers (§12.1). Each tool maps 1:1 to an AMP operation (§3.2). The top-level envelope maps tool names to their input shapes so every $def is referenced from the root (required for TypeScript codegen).",
   "type": "object",
+  "properties": {
+    "amp_encode":      { "$ref": "#/$defs/amp_encode" },
+    "amp_retrieve":    { "$ref": "#/$defs/amp_retrieve" },
+    "amp_reinforce":   { "$ref": "#/$defs/amp_reinforce" },
+    "amp_consolidate": { "$ref": "#/$defs/amp_consolidate" },
+    "amp_transform":   { "$ref": "#/$defs/amp_transform" },
+    "amp_delete":      { "$ref": "#/$defs/amp_delete" },
+    "amp_info":        { "$ref": "#/$defs/amp_info" }
+  },
   "$defs": {
     "memoryType": {
       "type": "string",
