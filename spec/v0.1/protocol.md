@@ -1094,6 +1094,19 @@ Following the MCP pattern:
 3. **Composable**: Multiple extensions MUST work independently
 4. **Independently versioned**: Each extension has its own version
 
+### 15.3 Application-Level Record Categorization (Informative)
+
+The core `type` field (§2.1) is a fixed 4-value enum (`episodic` / `semantic` / `procedural` / `working`) and MUST NOT be extended by implementations.
+
+However, applications often need a second axis of categorization orthogonal to `type` — e.g. `"style-preference"`, `"tone"`, `"writing-voice"` — to group memories by domain concept rather than cognitive kind. AMP providers MAY expose an application-level categorization field for this purpose, under the following constraints:
+
+- **Field location**: MUST be placed in `fields` (the extensible property bag, §4.1) or as a well-known optional property outside the core record keys
+- **Orthogonality**: MUST NOT conflict with or shadow the core `type` enum
+- **Naming**: SDK bindings SHOULD use `kind` (common in existing AKARI SDK bindings) or `category`. Implementations MUST document their chosen name in provider-specific docs
+- **Wire format**: Unknown values MUST be round-trippable (forwarded, not stripped) by intermediaries
+
+Reference implementation: the AKARI SDK (`@akari-os/schema-panel`) uses `record.kind: string` and query parameter `record_kind` as a user-defined category alongside the core `type` enum. This is a SDK-layer convention; downstream providers are not required to adopt the name `kind`.
+
 ---
 
 ## Appendix A: Cognitive Science Foundations
