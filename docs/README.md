@@ -17,6 +17,7 @@
 | パス | 内容 |
 |---|---|
 | [`../spec/v0.1/`](../spec/v0.1/) | v0.1（stable）— 正式リリース版 |
+| [`../spec/v0.1/SCHEMAS.md`](../spec/v0.1/SCHEMAS.md) | v0.1 の JSON Schema ファイル一覧（`schema.json` / `error.schema.json` / `mcp-tools.schema.json`）と追記ルール。SDK codegen の入力にも使われる |
 | [`../spec/v0.2/`](../spec/v0.2/) | v0.2（draft）— 検討中の拡張 |
 
 ### docs/specs（逆算 wrapper specs）
