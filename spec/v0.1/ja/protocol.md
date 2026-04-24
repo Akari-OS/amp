@@ -2,7 +2,7 @@
 
 > Status: Draft
 > Date: 2026-04-01
-
+>
 > 言語: 日本語訳（正本は [英語版](../protocol.md)）
 
 ## 1. Overview
@@ -275,6 +275,7 @@ confidence(t) = confidence(t₀) × e^(-decayRate × Δt)
 ```
 
 ここで：
+
 - `t₀` = 最後の強化または作成時刻
 - `Δt` = 経過時間（日単位）
 - `decayRate` = 型ごとの減衰率（設定可能）

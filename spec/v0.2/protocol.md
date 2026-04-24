@@ -86,6 +86,7 @@ The boundary is drawn by **level of abstraction**, not by content type:
 **Rule of thumb:** if the fact is *"what exists"*, it belongs in Pool. If the fact is *"what was learned about, by, or because of something"*, it belongs in AMP.
 
 Concretely:
+
 - A 4K video file and its extracted metadata? **Pool.**
 - The observation that the user tends to reuse that video's B-roll in morning posts? **AMP.**
 - A transcript produced by M2C and attached to the video? **Pool.**

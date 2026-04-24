@@ -286,6 +286,7 @@ confidence(t) = confidence(t₀) × e^(-decayRate × Δt)
 ```
 
 Where:
+
 - `t₀` = last reinforcement or creation time
 - `Δt` = time elapsed (in days)
 - `decayRate` = per-type decay rate (configurable)

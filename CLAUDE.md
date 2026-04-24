@@ -3,7 +3,7 @@
 > **共通規約**: エコシステム全体のコミットメッセージ規約・コード言語・日付形式・secrets 管理は
 > 親 `30_products/akari-os/CLAUDE.md §共通規約（子リポ共通）` を参照（Claude Code は階層化して自動読込）。
 > 本ファイルは**リポ固有の規約**のみを扱う。
-
+>
 > **親**: [Akari-OS エコシステム](https://github.com/Akari-OS/.github) — 全体ビジョン・ロードマップ・行動規範
 > **Memory Architecture**: [docs/memory.md](https://github.com/Akari-OS/.github/blob/main/docs/memory.md) — AMP が参照する 4 層記憶モデル
 
