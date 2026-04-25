@@ -1,6 +1,8 @@
 # AMP — Agent Memory Protocol
 
 > Standardize how AI agents remember.
+>
+> 📜 **Type: Specification** — This repo holds the protocol spec only. Implementations live in separate repos. See [Known Implementations](#known-implementations).
 
 ## What is AMP?
 
