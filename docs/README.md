@@ -1,7 +1,7 @@
 # AMP (Agent Memory Protocol) Documentation
 
 > **このリポの立ち位置**: Agent Memory Protocol の**仕様リポ**。エージェントが長期記憶を扱うためのプロトコル定義。
-> **扱う範囲**: spec v0.1（stable）/ v0.2（draft）、Known Implementations、Provider 規約、サンプル
+> **扱う範囲**: spec v0.1（stable）/ v0.2（draft）/ v0.3（draft）、Known Implementations、Provider 規約、サンプル
 > **扱わない範囲**: 実装（→ consumer 側の各エージェントリポ）、Pool のスキーマ設計（→ AkariPool）、運用ハブ（→ Hub）
 >
 > - 🌐 正典: [Akari-OS/.github](https://github.com/Akari-OS)
@@ -19,6 +19,7 @@
 | [`../spec/v0.1/`](../spec/v0.1/) | v0.1（stable）— 正式リリース版 |
 | [`../spec/v0.1/SCHEMAS.md`](../spec/v0.1/SCHEMAS.md) | v0.1 の JSON Schema ファイル一覧（`schema.json` / `error.schema.json` / `mcp-tools.schema.json`）と追記ルール。SDK codegen の入力にも使われる |
 | [`../spec/v0.2/`](../spec/v0.2/) | v0.2（draft）— 検討中の拡張 |
+| [`../spec/v0.3/protocol.md`](../spec/v0.3/protocol.md) | **AMP v0.3 (delta spec, draft)** — Strategy Router decision tree 正規化（causal / similarity / tag / relations / hybrid の 5 分岐）+ dedupConfig フィールド + Forward Compatibility (v0.4 graphWalk 予告)。ADR-076 normative reference。2026-04-27 draft |
 
 ### docs/specs（逆算 wrapper specs）
 
