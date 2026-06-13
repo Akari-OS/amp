@@ -4,6 +4,18 @@ All notable changes to the AMP (Agent Memory Protocol) specification are documen
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and AMP
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html) at the spec level.
 
+## [v0.3.0-draft] — 2026-04-27
+
+v0.2 に積み上げる delta spec。**v0.1・v0.2 と完全後方互換**。新規章 3 本を追加。
+
+See [`spec/v0.3/protocol.md`](spec/v0.3/protocol.md) for the full delta.
+
+### Added
+
+- **Strategy Router Decision Tree（§6）.** `retrieve` クエリをテキスト・構造・`intent` フラグをもとに Graph / Vector / Tag / Hybrid の 4 分岐（6 条件）へ確定的にルーティングするアルゴリズム。Normative — v0.3 プロバイダは実装必須。
+- **Deduplication Configuration（§7）.** `encode` 操作に `dedupConfig` フィールドを追加。ADR-076 が定義する類似度しきい値（`semanticThreshold` / `nearExactThreshold`）とコンフリクト解消ルールをプロバイダが上書き可能にする。ADR-076 は akari-os Hub 内部ドキュメントであり、外部読者はしきい値のみ参照すればよい（[spec/v0.3/protocol.md §7.2](spec/v0.3/protocol.md) 参照）。
+- **Forward Compatibility Signaling（§8, Informative）.** v0.4 でグラフウォークが first-class AMP API になる予告。POOL-005 transitive relation query との協調を想定。
+
 ## [v0.2.0-draft] — 2026-04-14
 
 Delta spec aligning AMP with the AKARI-OS ecosystem. **Fully backwards-compatible with v0.1**;

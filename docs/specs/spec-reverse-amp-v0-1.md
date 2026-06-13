@@ -21,14 +21,14 @@ This is a thin wrapper spec that serves as a stable anchor for Hub-side referenc
 **AMP (Agent Memory Protocol)** standardises how AI agents store, retrieve, share, and forget memories. It defines:
 
 - **Four memory types** — episodic, semantic, procedural, working — grounded in Atkinson-Shiffrin / Tulving / CoALA frameworks.
-- **MemoryRecord schema** — a JSON object carrying `id`, `type`, `payload`, `confidence`, `createdAt`, `updatedAt`, provenance, access-control, and relations fields. The authoritative JSON Schema is at [`spec/v0.1/schema.json`](../../spec/v0.1/schema.json).
+- **MemoryRecord schema** — a JSON object carrying `id`, `type`, `content`, `confidence`, `createdAt`, `updatedAt`, provenance, access-control, and relations fields. The authoritative JSON Schema is at [`spec/v0.1/schema.json`](../../spec/v0.1/schema.json).
 - **Memory lifecycle** — encode → retrieve → reinforce → consolidate → decay → delete. Decay is confidence-weighted; high-confidence memories decay more slowly.
-- **AMPProvider interface** — a pluggable backend contract. Any storage backend that implements `encode`, `retrieve`, `update`, `delete`, and `decay` is a conformant provider.
+- **AMPProvider interface** — a pluggable backend contract. Any storage backend that implements `encode`, `retrieve`, `reinforce`, `consolidate`, `transform`, `decay`, `delete`, and `deleteBulk` is a conformant provider.
 - **MCP compatibility** — AMP providers can be exposed as MCP tool servers (Appendix A of the spec), making AMP memory accessible from any MCP-aware agent runtime.
 
 ## Status
 
-Spec v0.1 is **stable** (released 2026-04-01). All sections are normative unless marked informative. AkariPool is the reference implementation.
+Spec v0.1 is **stable** (released 2026-04-01). All sections are normative unless marked informative. 参照実装は現時点で未リリース（[IMPLEMENTATIONS.md](../../IMPLEMENTATIONS.md) 参照）。
 
 ## Key Entry Points
 

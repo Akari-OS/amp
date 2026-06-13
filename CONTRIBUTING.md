@@ -8,6 +8,7 @@ AMP は AI エージェントが記憶を保存・検索・減衰させるため
 
 - **v0.1** — stable（`spec/v0.1/protocol.md`）
 - **v0.2** — draft, delta spec 形式（`spec/v0.2/protocol.md`）
+- **v0.3** — draft, delta spec 形式（`spec/v0.3/protocol.md`）— Strategy Router Decision Tree・dedupConfig・Forward Compatibility Signaling
 
 ## 貢献の種類
 
@@ -27,6 +28,12 @@ AMP は AI エージェントが記憶を保存・検索・減衰させるため
 
 - delta spec として v0.1 からの差分のみ記述
 - 完成したら v0.2.0 リリース版として確定
+
+### v0.3 (draft) を変更する場合
+
+- delta spec として v0.2 からの差分のみ記述（Strategy Router・dedupConfig・Forward Compatibility が主対象）
+- ADR-076 への参照は akari-os Hub リポ内部ドキュメントであることを明記すること
+- 完成したら v0.3.0 リリース版として確定
 
 ## PR フロー
 

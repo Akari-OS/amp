@@ -120,18 +120,25 @@ PII分類を内蔵: `none` / `personal` / `sensitive` / `restricted`
 
 ## 仕様書
 
-**最新:** v0.1（安定版）、v0.2-draft（AKARI-OS 向け差分仕様）
+**最新:** v0.1（安定版）、v0.2-draft（AKARI-OS 向け差分仕様）、v0.3-draft（Strategy Router + dedupConfig）
 
 ```
 spec/
 ├── v0.1/
-│   ├── protocol.md      ← コアプロトコル仕様（安定版）
-│   ├── schema.json      ← MemoryRecord JSON Schema
+│   ├── protocol.md           ← コアプロトコル仕様（安定版）
+│   ├── schema.json           ← MemoryRecord JSON Schema
+│   ├── error.schema.json     ← エラーレスポンス JSON Schema
+│   ├── mcp-tools.schema.json ← MCP ツール定義 JSON Schema
+│   ├── SCHEMAS.md            ← Schema ファイル概要・codegen ガイド
 │   └── ja/
-│       └── protocol.md  ← 日本語版
-└── v0.2/
-    └── protocol.md      ← 差分仕様（draft）: Pool 連携、
-                            7エージェント向けスキーマ、Shell API
+│       └── protocol.md       ← 日本語版
+├── v0.2/
+│   └── protocol.md           ← 差分仕様（draft）: Pool 連携、
+│                               7エージェント向けスキーマ、Shell API
+└── v0.3/
+    └── protocol.md           ← 差分仕様（draft）: Strategy Router
+                                Decision Tree、dedupConfig、
+                                Forward Compatibility Signaling
 ```
 
 ## 設計原則
@@ -154,6 +161,7 @@ Apache 2.0
 
 - [プロトコル仕様 (v0.1, 安定版)](spec/v0.1/protocol.md)
 - [プロトコル仕様 (v0.2, draft — 差分)](spec/v0.2/protocol.md)
+- [プロトコル仕様 (v0.3, draft — 差分)](spec/v0.3/protocol.md)
 - [JSON Schema](spec/v0.1/schema.json)
 - [日本語版プロトコル仕様](spec/v0.1/ja/protocol.md)
 

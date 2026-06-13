@@ -19,7 +19,7 @@
 | [`../spec/v0.1/`](../spec/v0.1/) | v0.1（stable）— 正式リリース版 |
 | [`../spec/v0.1/SCHEMAS.md`](../spec/v0.1/SCHEMAS.md) | v0.1 の JSON Schema ファイル一覧（`schema.json` / `error.schema.json` / `mcp-tools.schema.json`）と追記ルール。SDK codegen の入力にも使われる |
 | [`../spec/v0.2/`](../spec/v0.2/) | v0.2（draft）— 検討中の拡張 |
-| [`../spec/v0.3/protocol.md`](../spec/v0.3/protocol.md) | **AMP v0.3 (delta spec, draft)** — Strategy Router decision tree 正規化（causal / similarity / tag / relations / hybrid の 5 分岐）+ dedupConfig フィールド + Forward Compatibility (v0.4 graphWalk 予告)。ADR-076 normative reference。2026-04-27 draft |
+| [`../spec/v0.3/protocol.md`](../spec/v0.3/protocol.md) | **AMP v0.3 (delta spec, draft)** — Strategy Router decision tree 正規化（causal / similarity / tag / relations / hybrid の 5 分岐）+ dedupConfig フィールド + Forward Compatibility (v0.4 graphWalk 予告)。ADR-076 normative reference。2026-04-27 draft。**注**: ADR-076 は akari-os Hub リポ内部ドキュメント（本リポからは参照不可）。外部読者は spec §7.2 記載のしきい値のみ参照すれば実装可能。 |
 
 ### docs/specs（逆算 wrapper specs）
 
@@ -36,7 +36,8 @@
 | [`../CHANGELOG.md`](../CHANGELOG.md) | 変更履歴 |
 | [`../IMPLEMENTATIONS.md`](../IMPLEMENTATIONS.md) | Known Implementations 一覧 |
 | [`../CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md) | 行動規範 |
-| [`../examples/`](../examples/) | サンプル実装 |
+
+> **Note**: `examples/` ディレクトリは現在存在しない。サンプル実装は今後追加予定。
 
 ---
 

@@ -122,18 +122,25 @@ Agents can share memories with full provenance tracking. Every memory carries it
 
 ## Specification
 
-**Latest:** v0.1 (stable), v0.2-draft (AKARI-OS alignment delta)
+**Latest:** v0.1 (stable), v0.2-draft (AKARI-OS alignment delta), v0.3-draft (Strategy Router + dedupConfig)
 
 ```
 spec/
 ├── v0.1/
-│   ├── protocol.md      ← Core protocol specification (stable)
-│   ├── schema.json      ← MemoryRecord JSON Schema
+│   ├── protocol.md           ← Core protocol specification (stable)
+│   ├── schema.json           ← MemoryRecord JSON Schema
+│   ├── error.schema.json     ← Error response JSON Schema
+│   ├── mcp-tools.schema.json ← MCP tool definitions JSON Schema
+│   ├── SCHEMAS.md            ← Schema files overview & codegen guide
 │   └── ja/
-│       └── protocol.md  ← Japanese translation
-└── v0.2/
-    └── protocol.md      ← Delta spec (draft): Pool interop,
-                            7-agent schemas, Shell APIs
+│       └── protocol.md       ← Japanese translation
+├── v0.2/
+│   └── protocol.md           ← Delta spec (draft): Pool interop,
+│                               7-agent schemas, Shell APIs
+└── v0.3/
+    └── protocol.md           ← Delta spec (draft): Strategy Router
+                                decision tree, dedupConfig,
+                                Forward Compatibility signaling
 ```
 
 ## Design Principles
@@ -160,6 +167,7 @@ Apache 2.0
 
 - [Protocol Spec (v0.1, stable)](spec/v0.1/protocol.md)
 - [Protocol Spec (v0.2, draft — delta)](spec/v0.2/protocol.md)
+- [Protocol Spec (v0.3, draft — delta)](spec/v0.3/protocol.md)
 - [JSON Schema](spec/v0.1/schema.json)
 
 ### Inspiration
